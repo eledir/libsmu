@@ -4,6 +4,9 @@ if(MSVC)
 else()
 	cmake_minimum_required(VERSION 2.8.7)
 endif()
+
+set(CMAKE_OSX_ARCHITECTURES "x86_64")
+
 project(libsmu CXX C)
 
 # libsmu versioning
