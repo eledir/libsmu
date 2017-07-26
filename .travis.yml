@@ -79,7 +79,7 @@ install:
 
 script:
   - mkdir -p build && cd build
-  - cmake -DBUILD_PYTHON=OFF -DCMAKE_VERBOSE_MAKEFILE=ON ..
+  - cmake -DBUILD_PYTHON=OFF -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_OSX_ARCHITECTURES="x86_64" ..
   - make
 
   # create generic binary shell-based installer/tarball
